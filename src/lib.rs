@@ -7,18 +7,18 @@ use std::time::{SystemTime, UNIX_EPOCH};
 use crate::alphabet::DEFAULT_ALPHABET;
 
 #[derive(PartialEq, PartialOrd, Eq, Ord, Clone)]
-struct TempoId {
+pub struct TempoId {
     inner: String
 }
 
 impl TempoId {
-    fn generate() -> Self {
+    pub fn generate() -> Self {
         TempoId {
             inner: tempo_id(None),
         }
     }
 
-    fn generate_with_alphabet(alphabet: &'static str) -> Self {
+    pub fn generate_with_alphabet(alphabet: &'static str) -> Self {
         TempoId {
             inner: tempo_id(Some(TempoIdOptions {
                 alphabet,
@@ -27,19 +27,19 @@ impl TempoId {
         }
     }
 
-    fn generate_custom(options: TempoIdOptions) -> Self {
+    pub fn generate_custom(options: TempoIdOptions) -> Self {
         TempoId {
             inner: tempo_id(Some(options)),
         }
     }
 
-    fn parse(id: &str) -> Self {
+    pub fn parse(id: &str) -> Self {
         TempoId {
             inner: id.to_owned(),
         }
     }
 
-    fn to_string(&self) -> String {
+    pub fn to_string(&self) -> String {
         self.inner.to_owned()
     }
 }
