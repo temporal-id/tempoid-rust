@@ -1,4 +1,4 @@
-mod alphabet;
+pub mod alphabet;
 
 use rand::rngs::OsRng;
 use rand::RngCore;
