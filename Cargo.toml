@@ -2,6 +2,13 @@
 name = "tempoid"
 version = "0.1.0"
 edition = "2021"
+rust-version = "1.80"
+description = "Generates URL-friendly, unique, and short IDs that are sortable by time. Inspired by nanoid and UUIDv7."
+repository = "https://github.com/temporal-id/tempoid-rust"
+license = "MIT OR Apache-2.0"
+keywords = ["id", "uuid", "nanoid", "unique", "random"]
+categories = ["algorithms", "cryptography"]
+exclude = ["/.github", "/.gitignore"]
 
 [dependencies]
 rand = "0.8.5"
