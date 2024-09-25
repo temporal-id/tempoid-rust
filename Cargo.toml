@@ -1,10 +1,11 @@
 [package]
 name = "tempoid"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 rust-version = "1.80"
 description = "Generates URL-friendly, unique, and short IDs that are sortable by time. Inspired by nanoid and UUIDv7."
 repository = "https://github.com/temporal-id/tempoid-rust"
+homepage = "https://tempoid.dev"
 license = "MIT OR Apache-2.0"
 keywords = ["id", "uuid", "nanoid", "unique", "random"]
 categories = ["algorithms", "cryptography"]
